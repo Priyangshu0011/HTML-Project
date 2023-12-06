@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Online Pet and Animal Welfare Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Online Pet and Animal Welfare Platform</h1>
+  <header>
+    <nav>
+      <ul>
+        <!-- <li><img src="Image/Iman.jpg" height="45px" /></li> -->
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="adopt.html">Adoption</a></li>
+        <li><a href="welfare.html">Welfare</a></li>
+        <li><a href="rescue.html">Rescue Hub</a></li>
+        <li><a onclick="showPopup()">Donate Us</a></li>
+      </ul>
+    </nav>
+    <script>
+      // Function to show the pop-up
+      function showPopup() {
+        document.getElementById("popup").style.display = "block";
+      }
+
+      // Function to hide the pop-up
+      function hidePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
+    <div id="popup" class="popup-container">
+      <span class="close-btn" onclick="hidePopup()">&times;</span>
+
+      <img src="Image/QR.jpeg" width="300px" alt="Pop-up Image" />
+    </div>
+  </header>
+
+  <main >
+    <center>
+    <article id="homemain1">
+      <center>
+        <div class="form-container">
+          <h2>Login</h2>
+          <hr>
+      </center>
+      <form class="form">
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="mail" id="email" name="email" required>
+        </div><br>
+        <div class="form-group">
+          <label for="password">Password :</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+        <a href="adopt.html">
+        <button type="submit" class="login-button">Login</button></a>
+      </form>
+      <center>
+      <p>or</p>
+
+      <p> <a href="signup.html" id="e">Create an account</a></p>
+      </center>
+      </div>
+    </article></center>
+
+  </main>
+
+  <footer>
+    <ul class="fdis">
+      <u>Team Member</u>
+      <li>Akshat Sahay</li>
+      <li>Prashant Bharadwaj</li>
+      <li>Priyangshu Sett</li>
+    </ul>
+    <ul class="fdis">
+      <li><u>Contact</u> : +91 8454002973</li>
+      <li><u>Email</u> : akshatsahay19@gmail.com</li>
+    </ul>
+    <div class="fdis"></div>
+  </footer>
+</body>
+
+</html>
